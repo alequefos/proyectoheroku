@@ -1,0 +1,95 @@
+<html>
+<head>
+<!--
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;border:none;margin:0px auto;;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;}
+.tg .tg-oscuro{background-color:#D2E4FC;font-family:"Comic Sans MS", cursive, sans-serif;;text-align:center;vertical-align:middle}
+.tg .tg-cabecera{font-weight:bold;font-family:"Comic Sans MS", cursive, sans-serif;;text-align:center;vertical-align:middle}
+.tg .tg-oscuro2{background-color:#D2E4FC;font-family:"Comic Sans MS", cursive, sans-serif;;vertical-align:top}
+.tg .tg-claro{font-family:"Comic Sans MS", cursive, sans-serif;;text-align:center;vertical-align:middle}
+.tg .tg-claro2{font-family:"Comic Sans MS", cursive, sans-serif;;vertical-align:top}
+
+a { text-decoration:none; border-radius: 10px; padding: 2px 5px 5px 5px; -webkit-transition: color .5s linear; -moz-transition: color .5s linear; -ms-transition: color .5s linear; -o-transition: color .5s linear; transition: color .5s linear; }
+a:hover { background: #117A65; color: white; webkit-transition: color .5s linear; -moz-transition: color .5s linear; -ms-transition: color .5s linear; -o-transition: color .5s linear; transition: color .5s linear; }
+a:hover:before { content: url("imagenes/icono-enlace.png"); width="15" height="15"}
+</style>
+-->
+<link rel=StyleSheet href="estilo_index.css" type="text/css">
+</head>
+
+<body style="background-color:#117A65;">
+
+<script type='text/javascript'>
+var fallObjects=new Array();function newObject(url,height,width){fallObjects[fallObjects.length]=new Array(url,height,width);}
+
+var numObjs=60, waft=50, fallSpeed=10, wind=0;
+newObject("http://2.bp.blogspot.com/--fII5xz-9vY/UM-djWHHwgI/AAAAAAAABrI/tEKS6_ctv_k/s400/nieve2_jessi_diyva.png",22,22);
+newObject("http://3.bp.blogspot.com/-DPHwVIctTlg/UM-di9jKOiI/AAAAAAAABq8/wV567ynxL2U/s400/nieve1_jessi_diyva.png",22,22);
+
+function winSize(){winWidth=(moz)?window.innerWidth-180:document.body.clientWidth-180;winHeight=(moz)?window.innerHeight+500:document.body.clientHeight+500;}
+function winOfy(){winOffset=(moz)?window.pageYOffset:document.body.scrollTop;}
+function fallObject(num,vari,nu){
+objects[num]=new Array(parseInt(Math.random()*(winWidth-waft)),-30,(parseInt(Math.random()*waft))*((Math.random()>0.5)?1:-1),0.02+Math.random()/20,0,1+parseInt(Math.random()*fallSpeed),vari,fallObjects[vari][1],fallObjects[vari][2]);
+if(nu==1){document.write('<img id="fO'+i+'" style="position:fixed;" src="'+fallObjects[vari][0]+'">'); }
+}
+function fall(){
+for(i=0;i<numObjs;i++){
+var fallingObject=document.getElementById('fO'+i);
+if((objects[i][1]>(winHeight-(objects[i][5]+objects[i][7])))||(objects[i][0]>(winWidth-(objects[i][2]+objects[i][8])))){fallObject(i,objects[i][6],0);}
+objects[i][0]+=wind;objects[i][1]+=objects[i][5];objects[i][4]+=objects[i][3];
+with(fallingObject.style){ top=objects[i][1]+winOffset+'px';left=objects[i][0]+(objects[i][2]*Math.cos(objects[i][4]))+'px';}
+}
+setTimeout("fall()",31);
+}
+var objects=new Array(),winOffset=0,winHeight,winWidth,togvis,moz=(document.getElementById&&!document.all)?1:0;winSize();
+for (i=0;i<numObjs;i++){fallObject(i,parseInt(Math.random()*fallObjects.length),1);}
+fall();
+</script>
+<center>
+
+<br><br>
+<img src="imagenes/comparador.png" alt="Comparador" />
+<br><br><br><br>
+
+<table class="tg">
+  <tr>
+    <th class="tg-cabecera" rowspan="5"><img src="imagenes/gif2.gif" alt="LogoFord" align="right"/></th>
+    <th class="tg-cabecera" bgcolor="b9c9fe">Segmentos</th>
+    <th class="tg-cabecera" bgcolor="b9c9fe">Descripción</th>
+    <th class="tg-cabecera" bgcolor="b9c9fe">Enlace</th>
+	<th class="tg-cabecera" rowspan="5"><img src="imagenes/gif1.gif" alt="LogoFord" align="right"/></th>
+  </tr>
+  <tr>
+    <td class="tg-oscuro">B</td>
+    <td class="tg-oscuro2">-Generalmente tienen espacio para cuatro adultos y un niño<br>-Actualmente estos vehículos rondan los 4/4.25 m en carrocería</td>
+    <td class="tg-oscuro"><a href="segmento_b.html" style="text-decoration:none">Segmento b</a></td>
+  </tr>
+  <tr>
+    <td class="tg-claro">C</td>
+    <td class="tg-claro2">-Generalmente tienen espacio para cinco adultos<br>-Actualmente estos vehículos miden aproximadamente 4.3 m</td>
+    <td class="tg-claro"><a href="segmento_c.html" style="text-decoration:none">Segmento c</a></td>
+  </tr>
+  <tr>
+    <td class="tg-oscuro">Suv-B</td>
+    <td class="tg-oscuro2">-Generalmente tienen espacio para cuatro adultos y un niño<br>-Utilizan las mismas plataformas que los coches del segmento B</td>
+    <td class="tg-oscuro"><a href="segmento_suvb.html" style="text-decoration:none">Segmento suv-b</a></td>
+  </tr>
+  <tr>
+    <td class="tg-claro">Suv</td>
+    <td class="tg-claro2">-Generalmente tienen espacio para cinco adultos<br>-Utilizan las mismas plataformas que los coches del segmento C</td>
+    <td class="tg-claro"><a href="segmento_suv.html" style="text-decoration:none">Segmento suv</a></td>
+</table>
+
+<br><br><br><br>
+
+<img src="imagenes/ford.png" alt="LogoFord" width="180" height="100"/>
+<img src="imagenes/Hyundai.png" alt="LogoHyndai" width="180" height="100"/>
+<img src="imagenes/Kia.png" alt="LogoKia" width="180" height="100"/>
+<img src="imagenes/Volkswagen.png" alt="LogoVolkswagen" width="180" height="100"/>
+<img src="imagenes/Seat.png" alt="LogoSeat" width="180" height="100"/>
+
+</center>
+<body>
+</html>

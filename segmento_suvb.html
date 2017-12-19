@@ -1,0 +1,167 @@
+<html>
+<head>
+<!--
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;border:none;width: 50%;;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-oscuro{background-color:#D2E4FC;font-family:"Comic Sans MS", cursive, sans-serif ;;text-align:center;vertical-align:top}
+.tg .tg-negrita{font-weight:bold;font-family:"Comic Sans MS", cursive, sans-serif ;;text-align:center;vertical-align:top}
+.tg .tg-claro{font-family:"Comic Sans MS", cursive, sans-serif ;;text-align:center;vertical-align:top}
+.tg .tg-negrita2{background-color:#D2E4FC;font-weight:bold;font-family:"Comic Sans MS", cursive, sans-serif ;;text-align:center;vertical-align:top}
+</style>
+-->
+<link rel=StyleSheet href="estilo_segmentos.css" type="text/css">
+</head>
+
+<body style="background-color:#117A65;">
+<script type='text/javascript'>
+var fallObjects=new Array();function newObject(url,height,width){fallObjects[fallObjects.length]=new Array(url,height,width);}
+
+var numObjs=60, waft=50, fallSpeed=10, wind=0;
+newObject("http://2.bp.blogspot.com/--fII5xz-9vY/UM-djWHHwgI/AAAAAAAABrI/tEKS6_ctv_k/s400/nieve2_jessi_diyva.png",22,22);
+newObject("http://3.bp.blogspot.com/-DPHwVIctTlg/UM-di9jKOiI/AAAAAAAABq8/wV567ynxL2U/s400/nieve1_jessi_diyva.png",22,22);
+
+function winSize(){winWidth=(moz)?window.innerWidth-180:document.body.clientWidth-180;winHeight=(moz)?window.innerHeight+500:document.body.clientHeight+500;}
+function winOfy(){winOffset=(moz)?window.pageYOffset:document.body.scrollTop;}
+function fallObject(num,vari,nu){
+objects[num]=new Array(parseInt(Math.random()*(winWidth-waft)),-30,(parseInt(Math.random()*waft))*((Math.random()>0.5)?1:-1),0.02+Math.random()/20,0,1+parseInt(Math.random()*fallSpeed),vari,fallObjects[vari][1],fallObjects[vari][2]);
+if(nu==1){document.write('<img id="fO'+i+'" style="position:fixed;" src="'+fallObjects[vari][0]+'">'); }
+}
+function fall(){
+for(i=0;i<numObjs;i++){
+var fallingObject=document.getElementById('fO'+i);
+if((objects[i][1]>(winHeight-(objects[i][5]+objects[i][7])))||(objects[i][0]>(winWidth-(objects[i][2]+objects[i][8])))){fallObject(i,objects[i][6],0);}
+objects[i][0]+=wind;objects[i][1]+=objects[i][5];objects[i][4]+=objects[i][3];
+with(fallingObject.style){ top=objects[i][1]+winOffset+'px';left=objects[i][0]+(objects[i][2]*Math.cos(objects[i][4]))+'px';}
+}
+setTimeout("fall()",31);
+}
+var objects=new Array(),winOffset=0,winHeight,winWidth,togvis,moz=(document.getElementById&&!document.all)?1:0;winSize();
+for (i=0;i<numObjs;i++){fallObject(i,parseInt(Math.random()*fallObjects.length),1);}
+fall();
+</script>
+<center>
+
+<img src="imagenes/segmentosuvb.png" alt="Segmento suv-b" />
+<br>
+</center>
+
+<table class="tg" style="float:left;" width="50%">
+  <tr>
+    <th class="tg-negrita">Caracteristicas/Coche</th>
+    <th class="tg-negrita">Volkswagen</th>
+    <th class="tg-negrita">Ford Ecosport</th>
+    <th class="tg-negrita">Seat Arona</th>
+  </tr>
+  <tr>
+    <td class="tg-negrita2">Velocidad Máxima</td>
+    <td class="tg-oscuro">No disponible</td>
+    <td class="tg-oscuro">217 km/h <img src="imagenes/punto_rojo.png" alt="Punto rojo" width="15" height="15" /></td>
+    <td class="tg-oscuro">250 km/h <img src="imagenes/punto_verde.png" alt="Punto verde" width="15" height="15" /></td>
+  </tr>
+  <tr>
+    <td class="tg-negrita">Aceleración 0-100 km/h</td>
+    <td class="tg-claro">No disponible</td>
+    <td class="tg-claro">7.7 s <img src="imagenes/punto_rojo.png" alt="Punto rojo" width="15" height="15" /></td>
+    <td class="tg-claro">5.7 s <img src="imagenes/punto_verde.png" alt="Punto verde" width="15" height="15" /></td>
+  </tr>
+  <tr>
+    <td class="tg-negrita2">Consumo Urbano</td>
+    <td class="tg-oscuro">No disponible</td>
+    <td class="tg-oscuro">5.3 l/100 km <img src="imagenes/punto_verde.png" alt="Punto verde" width="15" height="15" /></td>
+    <td class="tg-oscuro">-</td>
+  </tr>
+  <tr>
+    <td class="tg-negrita">Consumo Extraurbano</td>
+    <td class="tg-claro">No disponible</td>
+    <td class="tg-claro">4.2 l/100 km <img src="imagenes/punto_verde.png" alt="Punto verde" width="15" height="15" /></td>
+    <td class="tg-claro">-</td>
+  </tr>
+  <tr>
+    <td class="tg-negrita2">Consumo Medio</td>
+    <td class="tg-oscuro">No disponible</td>
+    <td class="tg-oscuro">4.6 l/100 km <img src="imagenes/punto_verde.png" alt="Punto verde" width="15" height="15" /></td>
+    <td class="tg-oscuro">6.9 l/100 km <img src="imagenes/punto_rojo.png" alt="Punto rojo" width="15" height="15" /></td>
+  </tr>
+  <tr>
+    <td class="tg-negrita">Emisiones de CO₂</td>
+    <td class="tg-claro">No disponible</td>
+    <td class="tg-claro">119 gr/km <img src="imagenes/punto_verde.png" alt="Punto verde" width="15" height="15" /></td>
+    <td class="tg-claro">158 gr/km <img src="imagenes/punto_rojo.png" alt="Punto rojo" width="15" height="15" /></td>
+  </tr>
+  <tr>
+    <td class="tg-negrita2">Normativa de Emisiones</td>
+    <td class="tg-oscuro">No disponible</td>
+    <td class="tg-oscuro">Euro 6</td>
+    <td class="tg-oscuro">Euro 6</td>
+  </tr>
+  <tr>
+    <td class="tg-negrita">Longitud</td>
+    <td class="tg-claro">No disponible</td>
+    <td class="tg-claro">4.563 mm <img src="imagenes/punto_rojo.png" alt="Punto rojo" width="15" height="15" /></td>
+    <td class="tg-claro">4.324 mm <img src="imagenes/punto_verde.png" alt="Punto verde" width="15" height="15" /></td>
+  </tr>
+  <tr>
+    <td class="tg-negrita2">Anchura</td>
+    <td class="tg-oscuro">No disponible</td>
+    <td class="tg-oscuro">1.823 mm <img src="imagenes/punto_rojo.png" alt="Punto rojo" width="15" height="15" /></td>
+    <td class="tg-oscuro">1.816 mm <img src="imagenes/punto_verde.png" alt="Punto verde" width="15" height="15" /></td>
+  </tr>
+  <tr>
+    <td class="tg-negrita">Altura</td>
+    <td class="tg-claro">No disponible</td>
+    <td class="tg-claro">1.486 mm <img src="imagenes/punto_rojo.png" alt="Punto rojo" width="15" height="15" /></td>
+    <td class="tg-claro">1.435 mm <img src="imagenes/punto_verde.png" alt="Punto verde" width="15" height="15" /></td>
+  </tr>
+  <tr>
+    <td class="tg-negrita2">Peso</td>
+    <td class="tg-oscuro">No disponible</td>
+    <td class="tg-oscuro">1.477 kg <img src="imagenes/punto_verde.png" alt="Punto verde" width="15" height="15" /></td>
+    <td class="tg-oscuro">1.479 kg <img src="imagenes/punto_rojo.png" alt="Punto rojo" width="15" height="15" /></td>
+  </tr>
+  <tr>
+    <td class="tg-negrita">Tracción</td>
+    <td class="tg-claro">No disponible</td>
+    <td class="tg-claro">Delantera</td>
+    <td class="tg-claro">Delantera</td>
+  </tr>
+  <tr>
+    <td class="tg-negrita2">Caja de Cambios</td>
+    <td class="tg-oscuro">No disponible</td>
+    <td class="tg-oscuro">Manual</td>
+    <td class="tg-oscuro">Manual</td>
+  </tr>
+  <tr>
+    <td class="tg-negrita">Número de Velocidades</td>
+    <td class="tg-claro">No disponible</td>
+    <td class="tg-claro">6</td>
+    <td class="tg-claro">6</td>
+  </tr>
+  <tr>
+    <td class="tg-negrita2"></td>
+    <td class="tg-oscuro">No disponible</td>
+    <td class="tg-oscuro"><img src="imagenes/ford_ecosport.jpg" alt="Ford Ecosport" width="162" height="95"/></td>
+    <td class="tg-oscuro"><img src="imagenes/seat_arona.jpg" alt="Seat Arona" width="162" height="95"/></td>
+  </tr>
+</table>
+
+<table class="tg" style="float:right;" width="50%">
+  <tr>
+    <th class="tg-negrita" colspan="3">Encuentre su concesionario más cercano</th>
+  </tr>
+  <tr>
+    <td class="tg-oscuro"><b>Volkswagen</b></td>
+    <td class="tg-oscuro"><b>Ford</b></td>
+    <td class="tg-oscuro"><b>Seat</b></td>
+  </tr>
+  <tr>
+    <td class="tg-negrita">No disponible</td>
+    <td class="tg-negrita"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d49295.2586480669!2d-0.4440025627693001!3d39.44777924752719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sford!5e0!3m2!1ses!2ses!4v1512923742028" width="218" height="190" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+    <td class="tg-negrita"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d49295.26608232552!2d-0.4440025889064624!3d39.44776874588202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sseat!5e0!3m2!1ses!2ses!4v1512923766164" width="218" height="190" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+  </tr>
+</table>
+<p>.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="index.html"><img src="imagenes/boton_volver.png" align="right" alt="Volver" width="300" height="70" /></a>
+</body>
+</html>

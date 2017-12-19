@@ -1,0 +1,16 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;border:none;margin:0px auto;;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;}
+.tg .tg-oscuro{background-color:#D2E4FC;font-family:"Comic Sans MS", cursive, sans-serif;;text-align:center;vertical-align:middle}
+.tg .tg-cabecera{font-weight:bold;font-family:"Comic Sans MS", cursive, sans-serif;;text-align:center;vertical-align:middle}
+.tg .tg-oscuro2{background-color:#D2E4FC;font-family:"Comic Sans MS", cursive, sans-serif;;vertical-align:top}
+.tg .tg-claro{font-family:"Comic Sans MS", cursive, sans-serif;;text-align:center;vertical-align:middle}
+.tg .tg-claro2{font-family:"Comic Sans MS", cursive, sans-serif;;vertical-align:top}
+
+a { text-decoration:none; border-radius: 10px; padding: 2px 5px 5px 5px; -webkit-transition: color .5s linear; -moz-transition: color .5s linear; -ms-transition: color .5s linear; -o-transition: color .5s linear; transition: color .5s linear; }
+a:hover { background: #117A65; color: white; webkit-transition: color .5s linear; -moz-transition: color .5s linear; -ms-transition: color .5s linear; -o-transition: color .5s linear; transition: color .5s linear; }
+a:hover:before { content: url("imagenes/icono-enlace.png"); width="15" height="15"}
+
+/*body{ cursor: url(imagenes/cursor.png), pointer; }*/
+</style>
